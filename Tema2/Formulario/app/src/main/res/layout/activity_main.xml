@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="304dp"
+        android:layout_height="61dp"
+        android:src="@drawable/neodesignlogo_landscape"
+        app:layout_constraintBottom_toTopOf="@+id/logoLogin"
+        app:layout_constraintEnd_toEndOf="@+id/logoLogin"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/logoLogin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoLogin"
+        android:layout_width="138dp"
+        android:layout_height="158dp"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por favor introduzca email y contraseña"
+        android:textColor="@color/neo"
+        app:layout_constraintBottom_toTopOf="@+id/userEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.953" />
+
+    <EditText
+        android:id="@+id/userEntry"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:background="@color/grey"
+        android:hint="   Usuario"
+        android:inputType="text"
+        android:textColorHint="@color/neo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoLogin"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <EditText
+        android:id="@+id/userPass"
+        android:layout_width="338dp"
+        android:layout_height="42dp"
+        android:background="@color/grey"
+        android:hint="   Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/neo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEntry"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/neo"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userPass"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="@+id/userPass"
+        app:layout_constraintTop_toBottomOf="@+id/userPass"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/Clear_Button"
+        android:layout_width="108dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/neo"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/userPass"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toEndOf="@+id/Login_button"
+        app:layout_constraintTop_toBottomOf="@+id/userPass"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/Creator_tag"
+        android:layout_width="250dp"
+        android:layout_height="15dp"
+        android:text="Creado por Neo Desings, ©2024 "
+        android:textAlignment="center"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

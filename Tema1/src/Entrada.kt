@@ -1,5 +1,5 @@
 // variables.
-// funciones
+// funciones.
 // void -> Unit
 // public static void main(){}
 fun main(){

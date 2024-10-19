@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Customize your light theme here. -->
+    <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.Formulario" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryVariant">@color/neo</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/green</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/neo</item>attr/colorPrimaryV
+
+
+    </style>
+
+    <style name="Theme.Formulario" parent="Base.Theme.Formulario" />
+</resources>
